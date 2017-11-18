@@ -500,7 +500,7 @@
                         <outlet property="emailTxt" destination="Ujz-qM-n8h" id="NXq-yY-aRc"/>
                         <outlet property="passwordTxt" destination="Xsx-oO-Ql5" id="lc6-zW-yuc"/>
                         <outlet property="userImg" destination="UH6-Nu-hM4" id="KfK-0I-Gsp"/>
-                        <outlet property="usernameTxt" destination="vop-5t-4Xk" id="YkF-qQ-fuP"/>
+                        <outlet property="usernameTxt" destination="nE7-aM-Umi" id="eba-Lu-Mnr"/>
                         <segue destination="nsI-zR-JjN" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="yy6-X5-T6z"/>
                     </connections>
                 </viewController>

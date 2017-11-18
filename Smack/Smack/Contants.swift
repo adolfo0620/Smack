@@ -13,6 +13,7 @@ typealias CompletionHandler = (_ success: Bool) -> ()
 //URL COnstants
 let BASE_URL = "https://safe-bayou-88598.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
+let URL_LOGIN = "\(BASE_URL)account/login"
 
 // Segues
 let TO_LOGIN = "toLogin"
@@ -23,3 +24,9 @@ let UNWIND = "unwindToChannel"
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIN"
 let USER_EMAIL = "userEmail"
+
+
+// Headers
+let HEADER = [
+    "Content-Type": "application/json; charset=utf-8"
+]

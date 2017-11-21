@@ -102,7 +102,6 @@ class AuthService{
     
     
     func createUser(name: String, email: String, avatarName: String, avatarColor: String, completion: @escaping CompletionHandler){
-        
         let lowerCaseEmail = email.lowercased()
         let body: [String: Any] = [
             "name:":name,
@@ -125,8 +124,6 @@ class AuthService{
                 let color =  json["avatarColor"].stringValue
                 let avatarName = json["avatarName"].stringValue
                 let email = json["email"].stringValue
-                let name = json["name"].stringValue
-                
                 UserDataSerivce.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
                 completion(true)
                 

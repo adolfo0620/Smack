@@ -50,7 +50,6 @@ class CreateAccountVC: UIViewController {
         guard let email = emailTxt.text , emailTxt.text != "" else { return }
         guard let pass = passwordTxt.text , passwordTxt.text != "" else { return }
         guard let name = usernameTxt.text , usernameTxt.text != "" else { return }
-        
         AuthService.instance.registerUser(email: email, password: pass) { (success) in
             if success {
                 AuthService.instance.loginuser(email: email, password: pass, completion: { (success) in
@@ -59,13 +58,10 @@ class CreateAccountVC: UIViewController {
                             if success {
                                 AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
                                     if success {
-                                        
                                         self.spinner.isHidden = true
                                         self.spinner.stopAnimating()
                                         self.performSegue(withIdentifier: UNWIND, sender: nil)
-                                        
                                         NotificationCenter.default.post(name: NOTIF_USer_DATA_DID_CHANGE, object: nil)
-                                        
                                     }
                                 })
                             }
@@ -84,7 +80,7 @@ class CreateAccountVC: UIViewController {
         let g = CGFloat(arc4random_uniform(255)) / 255
         let b = CGFloat(arc4random_uniform(255)) / 255
         bgColor = UIColor(red: r, green: g, blue: b, alpha: 1)
-        
+        avatarColor = "[\(r), \(g), \(b), 1]"
         UIView.animate(withDuration: 0.2){
             self.userImg.backgroundColor = self.bgColor
         }

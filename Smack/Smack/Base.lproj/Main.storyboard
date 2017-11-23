@@ -125,7 +125,7 @@
                                 <rect key="frame" x="0.0" y="124" width="375" height="428"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RqK-xO-qLZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelcell" id="RqK-xO-qLZ" customClass="ChannelCell" customModule="Smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RqK-xO-qLZ" id="XWz-vU-TLm">
@@ -142,6 +142,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="ZmY-cO-W1x" id="QaJ-f0-vAY"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -176,6 +179,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="ZIT-5m-2zg" id="bVn-6a-C8J"/>
+                        <outlet property="tableView" destination="HLe-jV-ewk" id="73y-U0-BWo"/>
                         <outlet property="userImg" destination="oD0-Na-U96" id="TX0-b2-2Gc"/>
                         <segue destination="wcH-hl-lCS" kind="show" identifier="toLogin" id="otX-Fs-yMG"/>
                     </connections>

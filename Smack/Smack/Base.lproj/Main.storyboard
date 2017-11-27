@@ -154,6 +154,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOo-pZ-evC">
+                                <rect key="frame" x="8" y="621" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -163,10 +169,12 @@
                             <constraint firstItem="hY6-AE-Hmn" firstAttribute="leading" secondItem="BBX-3G-1vE" secondAttribute="leading" id="G9u-cr-wTd"/>
                             <constraint firstItem="1b3-gn-lM3" firstAttribute="top" secondItem="9nk-dM-UOU" secondAttribute="bottom" id="Glp-9c-l5Z"/>
                             <constraint firstItem="9nk-dM-UOU" firstAttribute="top" secondItem="JNY-F0-WJE" secondAttribute="bottom" constant="30" id="VVY-Rq-vQG"/>
+                            <constraint firstItem="9nk-dM-UOU" firstAttribute="top" secondItem="EOo-pZ-evC" secondAttribute="bottom" constant="6" id="W61-K7-yQB"/>
                             <constraint firstItem="hY6-AE-Hmn" firstAttribute="top" secondItem="BBX-3G-1vE" secondAttribute="top" id="bZe-OX-Y9q"/>
                             <constraint firstItem="9nk-dM-UOU" firstAttribute="leading" secondItem="BBX-3G-1vE" secondAttribute="leading" id="d8a-RU-vmR"/>
                             <constraint firstAttribute="trailing" secondItem="9nk-dM-UOU" secondAttribute="trailing" id="dEo-AJ-Bar"/>
                             <constraint firstItem="Vkv-9R-V0j" firstAttribute="centerY" secondItem="9nk-dM-UOU" secondAttribute="centerY" id="deD-tY-Ati"/>
+                            <constraint firstItem="EOo-pZ-evC" firstAttribute="leading" secondItem="BBX-3G-1vE" secondAttribute="leading" constant="8" id="fqf-8Z-gX4"/>
                             <constraint firstAttribute="trailing" secondItem="hY6-AE-Hmn" secondAttribute="trailing" id="pWX-Z2-sMT"/>
                             <constraint firstItem="JNY-F0-WJE" firstAttribute="leading" secondItem="BBX-3G-1vE" secondAttribute="leading" id="sul-fF-yqC"/>
                         </constraints>
@@ -177,11 +185,12 @@
                         <outlet property="messageTxtBox" destination="9nk-dM-UOU" id="tbB-pA-vy1"/>
                         <outlet property="sendBtn" destination="Vkv-9R-V0j" id="tab-sx-8gE"/>
                         <outlet property="tableView" destination="JNY-F0-WJE" id="Pui-Ur-Rfp"/>
+                        <outlet property="typingUserLbl" destination="EOo-pZ-evC" id="XcU-GN-z2h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTW-kk-jm2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="482.60869565217394"/>
+            <point key="canvasLocation" x="1348" y="565"/>
         </scene>
         <!--ChannelVC-->
         <scene sceneID="wtJ-Gj-shZ">

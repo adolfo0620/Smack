@@ -11,7 +11,8 @@ import Foundation
 typealias CompletionHandler = (_ success: Bool) -> ()
 
 //URL COnstants
-let BASE_URL = "https://safe-bayou-88598.herokuapp.com/v1/"
+//let BASE_URL = "https://safe-bayou-88598.herokuapp.com/v1/"
+let BASE_URL = "http:127.0.0.1:3005/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
@@ -42,6 +43,8 @@ let BEARER_HEADER = [
 
 // Notification Constants
 let NOTIF_USer_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
+let NOTIF_CHANNELS_LOADED = Notification.Name("channelLoaded")
+let NOTIF_CHANNEL_SELECTED = Notification.Name("channelSelected")
 
 // Colors
 let smackPurplePlaceholser = #colorLiteral(red: 0.2588235294, green: 0.3294117647, blue: 0.7254901961, alpha: 0.5)

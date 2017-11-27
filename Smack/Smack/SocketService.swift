@@ -16,12 +16,11 @@ class SocketService: NSObject {
     override init(){
         super.init()
     }
+    
     // TODO: for some reason is not reaching the server
-    var socket: SocketIOClient = SocketIOClient(manager: SocketManager(socketURL: URL(string: BASE_URL)!), nsp: "/swift")
-    
-    
+    let socket: SocketIOClient = SocketManager(socketURL: URL(string: BASE_URL)!, config: [.log(true)]).defaultSocket
+
     func establishConnection(){
-        print("connected")
         socket.connect()
     }
     
@@ -44,9 +43,7 @@ class SocketService: NSObject {
             let newChannel = Channel(channelTitle: channelName, channelDescription: channelDescription, id: channelId)
             print(newChannel)
             MessageService.instance.channels.append(newChannel)
-            
             completion(true)
         }
     }
-    
 }

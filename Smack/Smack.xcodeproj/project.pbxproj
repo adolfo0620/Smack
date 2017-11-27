@@ -34,6 +34,7 @@
 		3E1B81981FC8EE2F008B591C /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1B81971FC8EE2F008B591C /* SocketService.swift */; };
 		3EFCDCB21FCC93A900FEB295 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFCDCB11FCC93A900FEB295 /* Message.swift */; };
 		3EFCDCB41FCCA00C00FEB295 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFCDCB31FCCA00C00FEB295 /* KeyboardBoundView.swift */; };
+		3EFCDCB61FCCA3F000FEB295 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFCDCB51FCCA3F000FEB295 /* MessageCell.swift */; };
 		BAC0564CD2B841243810C579 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91E00BEE3D4583A3E636066 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		3E1B81971FC8EE2F008B591C /* SocketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		3EFCDCB11FCC93A900FEB295 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3EFCDCB31FCCA00C00FEB295 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		3EFCDCB51FCCA3F000FEB295 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		9722342BD5317FE06F125FAA /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 		E3E8418D4F7FD41852784C9E /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		E91E00BEE3D4583A3E636066 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +175,7 @@
 				3E1B817E1FC0F380008B591C /* AvatarCell.swift */,
 				3E1B81801FC3B92A008B591C /* CircleImage.swift */,
 				3E1B818B1FC67E0B008B591C /* ChannelCell.swift */,
+				3EFCDCB51FCCA3F000FEB295 /* MessageCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				3E1B818C1FC67E0B008B591C /* ChannelCell.swift in Sources */,
 				3E1B817D1FC0EF3C008B591C /* AvatarPickerVC.swift in Sources */,
 				3E1B81841FC3D8C5008B591C /* ProfileVCViewController.swift in Sources */,
+				3EFCDCB61FCCA3F000FEB295 /* MessageCell.swift in Sources */,
 				3E1B81791FC09E35008B591C /* RoundedButton.swift in Sources */,
 				3EFCDCB21FCC93A900FEB295 /* Message.swift in Sources */,
 				3E1B818A1FC67354008B591C /* Channel.swift in Sources */,
